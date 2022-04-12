@@ -44,4 +44,10 @@ npm run build
 ```sh
 npm run lint
 ```
+### API URL
+
+If your API url is different from `https://localhost:7133` change it on the file `src/views/CurrencyView.vue` line 3;
+
+### Screenshot of the view
+
 ![image](https://user-images.githubusercontent.com/21270015/163018261-eea37e11-cd25-490f-acfd-48e68f67fc93.png)
