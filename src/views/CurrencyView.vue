@@ -1,6 +1,6 @@
 <script lang="ts">
 import CurrencyComparison from "../components/CurrencyComparison.vue";
-const API_URL = "https://localhost:7133/currencies";
+const API_URL = "https://localhost:7133";
 
 export default {
   data: () => ({
@@ -18,7 +18,7 @@ export default {
   methods: {
     async getCurrencies() {
       this.loading = true;
-      this.currencies = await (await fetch(API_URL)).json();
+      this.currencies = await (await fetch(`${API_URL}/currencies`)).json();
       this.loading = false;
     },
   },
